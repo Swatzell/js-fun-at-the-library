@@ -27,14 +27,17 @@ function writeBook(title,mainCharacter,genre){
 
     title: title,
     mainCharacter: mainCharacter,
-    pageCount: title.length * 20,
+    pageCount: calculatePageCount(title),
     genre: genre
 }
 return book
 }
 
 function editBook(title){
-title.pageCount =  Math.floor(title.pageCount*0.75)
+var editedPageCount = title.pageCount*0.75
+title.pageCount = editedPageCount
+return title  
+// title.pageCount =  Math.floor(title.pageCount*0.75)
 }
 
 module.exports = {
