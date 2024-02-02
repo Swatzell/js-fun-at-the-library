@@ -23,7 +23,7 @@ for (var i =0; i < array.length; i++)
 
 function listTitles(shelfArray){
 var title = [] 
-for (i = 0;i<shelfArray.length; i++){
+for (var i = 0;i<shelfArray.length; i++){
   // console.log(`>>>>`,shelfArray[i].title)
 title.push(shelfArray[i].title)
 }
@@ -34,7 +34,7 @@ return title.join(', ')
 
 function searchShelf(shelfArray,title){
   var titles = []
-  for (i = 0;i<shelfArray.length;i++) {
+  for (var i = 0;i<shelfArray.length;i++) {
  titles.push(shelfArray[i].title)
     //   if (shelfArray[i].title === title){
   //   return true
